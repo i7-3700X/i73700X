@@ -1,6 +1,4 @@
 discord.py
-random
-re
 asyncio
 Dtime==0.1
 datetime
