@@ -10,7 +10,7 @@ from Dtime import Uptime
 from discord.utils import get
 from discord.ext import tasks
 
-token = "Nzg0NDQ5MTA4OTc4OTU4MzQ2.X8pdKQ.EZt0jGTf4LXbv_L_0cY8KspG6LU" #봇 토큰 설정하기
+token = "BOT_TOKEN" #봇 토큰 설정하기
 intents = discord.Intents.all()
 client = discord.Client(intents=intents) #client 설정하기
 Uptime.uptimeset()
@@ -429,4 +429,4 @@ async def on_guild_remove(server):
 
 
 access_token = os.environ["BOT_TOKEN"]
-client.run(access_token)
+client.run(token)
