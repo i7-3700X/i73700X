@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import discord
+import os
 import datetime
 import asyncio
 import re
@@ -425,5 +426,7 @@ async def on_guild_join(server):
 @client.event
 async def on_guild_remove(server):
     print(server,"서버에서 연결이 끊겼습니다..")
- 
-client.run(token)
+
+
+access_token = os.environ["bot_token"]
+client.run(access_token)
