@@ -428,5 +428,5 @@ async def on_guild_remove(server):
     print(server,"서버에서 연결이 끊겼습니다..")
 
 
-access_token = os.environ["bot_token"]
+access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
