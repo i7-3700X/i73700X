@@ -2,4 +2,3 @@ discord.py
 asyncio
 Dtime==0.1
 datetime
-time
